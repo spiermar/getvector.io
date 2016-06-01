@@ -4,7 +4,7 @@ layout: index
 
 <section id="promo" class="promo section offset-header">
     <div class="container text-center">
-        <img src="/images/logo.png" alt="Smiley face" width="480">
+        <img src="{{ '/images/logo.png' | prepend: site.baseurl | prepend: site.url }}" alt="Smiley face" width="480">
         <p class="intro">An on-host performance monitoring framework which exposes hand picked high resolution metrics to every engineer’s browser</p>
         <div class="btns">
             <a class="btn btn-cta-secondary" href="{{ '/demo' | prepend: site.baseurl }}" target="_blank">Demo</a>
