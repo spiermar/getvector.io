@@ -8,7 +8,7 @@ layout: index
         <p class="intro">An on-host performance monitoring framework which exposes hand picked high resolution metrics to every engineer’s browser</p>
         <div class="btns">
             <a class="btn btn-cta-secondary" href="{{ '/demo' | prepend: site.baseurl }}" target="_blank">Demo</a>
-            <a class="btn btn-cta-primary" href="https://bintray.com/netflixoss/downloads/vector/view" target="_blank">Download</a>
+            <a class="btn btn-cta-primary scrollto" href="#getting-started" target="_blank">Getting Started</a>
         </div>
         <ul class="meta list-inline">
             <li><a href="https://github.com/Netflix/vector" target="_blank">View on GitHub</a></li>
@@ -32,31 +32,51 @@ layout: index
         <div class="row">
             <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="content">
-                    <h3 class="sub-title"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;High Resolution</h3>
-                    <p></p>
+                    <h3 class="sub-title"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;High-Resolution</h3>
+                    <p>Vector provides access to high-resolution metrics, up to 1 second.</p>
                 </div><!--//content-->
             </div><!--//item-->
             <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="content">
                     <h3 class="sub-title"><i class="fa fa-clock-o"></i>&nbsp;&nbsp;Real-Time</h3>
-                    <p></p>
+                    <p>Metrics come directly from the monitored host, in near real-time.</p>
                 </div><!--//content-->
             </div><!--//item-->
             <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="content">
                     <h3 class="sub-title"><i class="fa fa-crosshairs"></i>&nbsp;&nbsp;On-Demand</h3>
-                    <p></p>
+                    <p>The monitoring overhead is close to zero and the agent is completely idle while not being used.</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
+                <div class="content">
+                    <h3 class="sub-title"><i class="fa fa-bolt"></i>&nbsp;&nbsp;Lightweight</h3>
+                    <p>Only the necessary metrics are collected for monitoring, keeping the framework very light.</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
+                <div class="content">
+                    <h3 class="sub-title"><i class="fa fa-code"></i>&nbsp;&nbsp;Configurable</h3>
+                    <p>Completely configurable dashboards provide simple cross-metric correlation and analysis.</p>
+                </div><!--//content-->
+            </div><!--//item-->
+            <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
+                <div class="content">
+                    <h3 class="sub-title"><i class="fa fa-cubes"></i>&nbsp;&nbsp;Extensible</h3>
+                    <p>Vecotor is open source and can be easily extended to include more metrics and widgets.</p>
                 </div><!--//content-->
             </div><!--//item-->
         </div><!--//row-->
     </div><!--//container-->
 </section><!--//about-->
 
-<section id="docs" class="docs section">
+<section id="getting-started" class="docs section">
     <div class="container">
       <div class="docs-inner">
         <h2 class="title text-center">Getting Started</h2>
-          <p>Vector depends on Performance Co-Pilot (PCP) to collect metrics on each host you plan to monitor. See Installing Performance Co-Pilot for instructions on how to install it. Once PCP is installed, you should be able to run Vector and connect to the monitored host.</p>
+          <p>Vector depends on Performance Co-Pilot (PCP) to collect metrics on each host you plan to monitor.</p>
+          <p>See <a href="/docs/installing-performance-co-pilot">Installing Performance Co-Pilot</a> for instructions on how to do it.</p>
+          <p>Once PCP is installed, you should be able to run Vector and connect to the monitored host.</p>
           <div class="block">
             <h3 class="sub-title text-center">With Docker</h3>
             <div class="code-block">
@@ -71,19 +91,34 @@ netflixoss/vector:latest
           </div><!--//block-->
           <div class="block">
             <h3 class="sub-title text-center">With a Web Server</h3>
-            <p>Since Vector is just a static application, you should be able to easily deploy it to any web server. The Vector distribution tarball, containing all dependencies, can be found on Bintray:</p>
-            <p><a href="https://bintray.com/netflixoss/downloads/vector/view">https://bintray.com/netflixoss/downloads/vector/view</a>
-            <p>With that, the only thing you need is to download and uncompress the gzip tarball into your web server directory. For example, using Ubuntu and Apache 2.</p>
+            <p>Since Vector is just a static application, you should be able to easily deploy it to any web server. For example, using Ubuntu and Apache 2.</p>
             <div class="code-block">
               <pre class="language-bash"><code class="language-bash">
-$ sudo apt-get install apache2
 $ cd /var/www/html
 $ sudo wget https://bintray.com/artifact/download/netflixoss/downloads/1.1.0/vector.tar.gz
 $ sudo tar xvzf vector.tar.gz
               </code></pre>
             </div><!--//code-block-->
-            <p>That's it! Just open your browser and point to your server. Apache should run by default on port 80.</p>
           </div><!--//block-->
+          <p>That's it! Just open your browser and point to your Docker container on port 80 or the web server. Apache also runs by default on port 80.</p>
+          <p>Just enter the hostname or IP from the host you installed PCP on, and start collecting metrics!</p>
+          <p>Happy Monitoring! <i class="fa fa-heart"></i></p>
+        </div><!--//docs-inner-->
+    </div><!--//container-->
+</section><!--//docs-->
+
+<section id="support" class="docs section">
+    <div class="container">
+      <div class="docs-inner">
+        <h2 class="title text-center">Support</h2>
+        <h3 class="sub-title text-center">Questions</h3>
+        <p>Vector has a team on <a href="https://vectoross.slack.com/">Slack</a>, where most of the development and usage discussions happen.</p>
+        <p>If you have a question or would like to discuss anything releated to Vector, join the team. If you don't have an invite yet, enter your email <a href="http://slack.vectoross.io/">here</a> and we will send you one!</p>
+        <p>Join Vector on Slack for support and discussion. </p>
+        <p>You can also post questions to to either <a href="https://groups.google.com/forum/#!forum/vector-users">Google Groups</a> or <a href="http://stackoverflow.com/questions/tagged/vectoross">Stack Overflow</a>.</p>
+        <h3 class="sub-title text-center">Issues</h3>
+        <p>Vector tracks bugs and future development on <a href="https://github.com/Netflix/vector/issues">GitHub</a>.</p>
+        <p>If you have a bug or issue to report, <a href="https://github.com/Netflix/vector/issues">GitHub issues</a> is the place to go.</p>
         </div><!--//docs-inner-->
     </div><!--//container-->
 </section><!--//docs-->
