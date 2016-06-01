@@ -1,38 +1,40 @@
-<footer class="site-footer">
+<section id="contact" class="contact section has-pattern">
+    <div class="container">
+        <div class="contact-inner">
+            <div class="info text-center">
+                <h2 class="title  text-center">Get Connected</h2>
+                <ul class="social-icons list-inline">
+                    <li><a href="https://github.com/Netflix/vector" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="http://stackoverflow.com/questions/tagged/vectoross" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                    <li><a href="https://vectoross.test.netflix.net" target="_blank"><i class="fa fa-slack"></i></a></li>
+                    <li><a href="https://twitter.com/vectoross" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="/feed.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="https://groups.google.com/forum/#!forum/vector-users" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div><!--//info-->
+        </div><!--//contact-inner-->
+    </div><!--//container-->
+</section><!--//contact-->
 
-  <div class="wrapper">
+<footer class="footer">
+    <div class="container text-center">
+        <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </div><!--//container-->
+</footer><!--//footer-->
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+<!-- Javascript -->
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/prism.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+  ga('create', 'UA-5493493-10', 'auto');
+  ga('send', 'pageview');
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+</script>
