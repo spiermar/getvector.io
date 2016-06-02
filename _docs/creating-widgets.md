@@ -1,11 +1,13 @@
 ---
 title: Creating Widgets
-index: 4
+index: 7
 ---
 
 ### Simple Widgets
 
-Here is a simple example of how to create a new widget based on an existing data motel. Just append this to the definitions variable on app.widgets.js.
+Here is a simple example of how to create a new widget based on an existing data model.
+
+Just append this to the definitions array under `app/components/widget/widget.factory.js`.
 
 ```javascript
 {
@@ -30,4 +32,4 @@ Here is a simple example of how to create a new widget based on an existing data
 }
 ```
 
-This polls nfs4.client metrics, assuming a cumulative value and reusing the MultipleCumulativeMetricTimeSeriesDataModel data model.
+This polls the nfs4.client metric, assuming a cumulative value and reusing the MultipleCumulativeMetricTimeSeriesDataModel data model.

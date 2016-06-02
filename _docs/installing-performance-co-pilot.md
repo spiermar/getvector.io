@@ -1,15 +1,15 @@
 ---
 title: Installing Performance Co-Pilot
-index: 3
+index: 6
 ---
 
 Since Vector depends on version 3.10 or higher, the packages currently available on most Linux distro repositories would not suffice. Until newer versions are available in the repositories, you should be able to install PCP from binary packages made available by the PCP project on Bintray or build it from source.
 
-## Linux binary packages
+### Binary Packages
 
-### Deb format (Debian, Ubuntu)
+#### Debian-based Systems (Debian, Ubuntu)
 
-To install using the PCP repo, first you need to import the key:
+To install using the official PCP binaries, first you need to import the repo key:
 
 ```
 $ curl 'https://bintray.com/user/downloadSubjectPublicKey?username=pcp' | sudo apt-key add -
@@ -43,7 +43,7 @@ $ sudo apt-get install pcp pcp-webapi
 
 That's it! Now PCP should be installed and running on your system!
 
-## Building from source
+### Building from Source
 
 To build PCP from source, get the current version of the source code:
 
@@ -54,13 +54,13 @@ $ git clone git://git.pcp.io/pcp
 Check that pre-requisites such as libmicrohttpd headers/libraries and
 pkgconfig are installed.
 
-To automatically install build-time dependencies on a Debian-derived distro:
+To automatically install build-time dependencies on a Debian-based distro:
 
 ```
 $ apt-get build-dep pcp
 ```
 
-To automatically install build-time dependencies on a RedHat-derived distro:
+To automatically install build-time dependencies on a RedHat-based distro:
 
 ```
 $ yum-builddep -y pcp
@@ -77,6 +77,6 @@ $ useradd -c "Performance Co-Pilot" -g pcp -d /var/lib/pcp -M -r -s /usr/sbin/no
 $ make install
 ```
 
-More information on how to install Performance Co-Pilot can be found at:
+More information on how to build Performance Co-Pilot from source can be found at:
 
 [http://pcp.io/docs/installation.html#src](http://pcp.io/docs/installation.html#src)

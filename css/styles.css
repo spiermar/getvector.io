@@ -326,6 +326,12 @@ pre code {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+.docs .docs-inner li {
+  line-height: 200% !important;
+}
+.docs .docs-inner p {
+  line-height: 150% !important;
+}
 /* ======= License Section ======= */
 .license {
   padding: 80px 0;
