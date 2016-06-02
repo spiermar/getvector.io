@@ -7,7 +7,7 @@ Since Vector is just a static application, you should be able to easily deploy i
 
 The Vector distribution tarball, containing all its dependencies, can be found on Bintray:
 
-[https://bintray.com/netflixoss/downloads/vector/view](https://bintray.com/netflixoss/downloads/vector/view)
+[{{ site.bintray_binary }}]({{ site.bintray_binary }})
 
 The only thing you need to do is download and uncompress the gzip tarball into your web server directory.
 
@@ -15,7 +15,7 @@ For example, using Ubuntu with Apache 2:
 
 ```
 $ cd /var/www/html
-$ sudo wget https://bintray.com/artifact/download/netflixoss/downloads/1.1.0/vector.tar.gz
+$ sudo wget {{ site.bintray_binary }}
 $ sudo tar xvzf vector.tar.gz
 ```
 

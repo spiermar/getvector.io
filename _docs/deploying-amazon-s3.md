@@ -8,7 +8,7 @@ You can deploy Vector to an Amazon S3 bucket. This way you don't need to provisi
 1. On Amazon's S3 console, select the S3 bucket you want to use to host Vector.
 2. Under "properties", "Static Website Hosting", select "Enable Website Hosting".
 5. Take note of the S3 "endpoint". This is the address you will type in your the browser.
-6. Download Vector distribution from Bintray: $ wget https://bintray.com/artifact/download/netflixoss/downloads/1.1.0/vector.tar.gz
+6. Download Vector distribution from Bintray: $ wget {{ site.bintray_binary }}
 7. Uncompress the distribution file: $ tar xvzf vector.tar.gz
 8. Upload the assets to the S3 bucket using s3cmd: $ s3cmd put --recursive * s3://S3-BUCKET/
 9. Open your browser and type in the S3 endpoint address.

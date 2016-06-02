@@ -10,7 +10,7 @@ In addition to the API binding, `pmwebd` may be optionally configured as a simpl
 First you must download the distribution tarball and uncompress it:
 
 ```
-$ wget https://bintray.com/artifact/download/netflixoss/downloads/1.1.0/vector.tar.gz
+$ wget {{ site.bintray_binary }}
 $ tar xvzf vector.tar.gz
 ```
 
