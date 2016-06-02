@@ -87,6 +87,7 @@ pre code {
 .header {
   padding: 10px 0;
   background: #17baef;
+  z-index: 9999;
   color: #fff;
   position: fixed;
   width: 100%;
