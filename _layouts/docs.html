@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="docs section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <div class="docs-inner">
+                    <h3 class="title text-center">Contents</h3>
+                    <div class="block">
+                        {% for doc in site.docs %}
+                        <p><a href="{{ doc.url}}">{{ doc.title }}</a></p>
+                        {% endfor %}
+                    </div><!--//block-->
+                </div><!--//docs-inner-->
+            </div><!--//sidebar-->
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="docs-inner">
+                    <h2 class="title text-center">{{ page.title }}</h2>
+                    <div class="block">
+                        {{ content }}
+                    </div><!--//block-->
+                </div><!--//docs-inner-->
+            </div><!--//content-->
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//features-->

@@ -10,14 +10,13 @@ github_username:  Neflix
 collections:
   docs:
     output: true
-    layout: page
 
 defaults:
   - scope:
       path: ""
       type: docs
     values:
-      layout: page
+      layout: docs
 
 # Build settings
 markdown: kramdown
