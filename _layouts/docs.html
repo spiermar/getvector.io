@@ -9,7 +9,8 @@ layout: default
                 <div class="docs-inner">
                     <h3 class="title text-center">Contents</h3>
                     <div class="block">
-                        {% for doc in site.docs %}
+                        {% assign items = site.docs | sort: 'index' %}
+                        {% for doc in items %}
                         <p><a href="{{ doc.url}}">{{ doc.title }}</a></p>
                         {% endfor %}
                     </div><!--//block-->

@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+index: 2
 ---
 
 ![Screenshot](img/screenshot.png)

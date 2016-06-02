@@ -1,5 +1,6 @@
 ---
 title: Installing Performance Co-Pilot
+index: 3
 ---
 
 Since Vector depends on version 3.10 or higher, the packages currently available on most Linux distro repositories would not suffice. Until newer versions are available in the repositories, you should be able to install PCP from binary packages made available by the PCP project on Bintray or build it from source.

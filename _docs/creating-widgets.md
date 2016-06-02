@@ -1,5 +1,6 @@
 ---
 title: Creating Widgets
+index: 4
 ---
 
 ### Simple Widgets
