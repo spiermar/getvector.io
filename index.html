@@ -4,7 +4,7 @@ layout: index
 
 <section id="promo" class="promo section offset-header">
     <div class="container text-center">
-        <img src="{{ '/images/logo.png' | prepend: site.baseurl | prepend: site.url }}" alt="Smiley face" width="480">
+        <img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="Vector logo" width="40%" style="max-width: 494px; min-width: 240px;">
         <p class="intro">An on-host performance monitoring framework which exposes hand picked high resolution metrics to every engineer’s browser</p>
         <div class="btns">
             <a class="btn btn-cta-secondary" href="{{ '/demo' | prepend: site.baseurl }}" target="_blank">Demo</a>
@@ -27,8 +27,12 @@ layout: index
 
 <section id="about" class="about section">
     <div class="container">
-        <h2 class="title text-center">What is Vector?</h2>
-        <p class="intro text-center">Vector is an open source on-host performance monitoring framework which exposes hand picked high resolution system and application metrics to every engineer’s browser. Having the right metrics available on-demand and at a high resolution is key to understand how a system behaves and correctly troubleshoot performance issues.</p>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2 class="title text-center">What is Vector?</h2>
+                <p class="intro text-center">Vector is an open source on-host performance monitoring framework which exposes hand picked high resolution system and application metrics to every engineer’s browser. Having the right metrics available on-demand and at a high resolution is key to understand how a system behaves and correctly troubleshoot performance issues.</p>
+            </div>
+        </div>
         <div class="row">
             <div class="item col-md-4 col-sm-6 col-xs-12 text-center">
                 <div class="content">
@@ -73,12 +77,14 @@ layout: index
 <section id="getting-started" class="docs section">
     <div class="container">
       <div class="docs-inner">
-        <h2 class="title text-center">Getting Started</h2>
+          <h2 class="title text-center">Getting Started</h2>
+          <img src="{{ '/images/screenshot.png' | prepend: site.baseurl }}" alt="Vector screenshot" width="100%" />
           <p>Vector depends on Performance Co-Pilot (PCP) to collect metrics on each host you plan to monitor.</p>
           <p>See <a href="/docs/installing-performance-co-pilot">Installing Performance Co-Pilot</a> for instructions on how to do it.</p>
           <p>Once PCP is installed, you should be able to run Vector and connect to the monitored host.</p>
           <div class="block">
             <h3 class="sub-title text-center">With Docker</h3>
+            <p>We provide an official Docker image for Vector. You can pull it from Docker Hub and start the container with the following command.</p>
             <div class="code-block">
               <pre class="language-bash"><code class="language-bash">
 $ docker run \
@@ -101,7 +107,7 @@ $ sudo tar xvzf vector.tar.gz
             </div><!--//code-block-->
           </div><!--//block-->
           <p>That's it! Just open your browser and point to your Docker container on port 80 or the web server. Apache also runs by default on port 80.</p>
-          <p>Just enter the hostname or IP from the host you installed PCP on, and start collecting metrics!</p>
+          <p>Once the Vector UI is loaded, just enter the hostname or IP from the host you installed PCP on, and start collecting metrics!</p>
           <p>Happy Monitoring! <i class="fa fa-heart"></i></p>
         </div><!--//docs-inner-->
     </div><!--//container-->
@@ -112,13 +118,13 @@ $ sudo tar xvzf vector.tar.gz
       <div class="docs-inner">
         <h2 class="title text-center">Support</h2>
         <h3 class="sub-title text-center">Questions</h3>
-        <p>Vector has a team on <a href="https://vectoross.slack.com/">Slack</a>, where most of the development and usage discussions happen.</p>
-        <p>If you have a question or would like to discuss anything releated to Vector, join the team. If you don't have an invite yet, enter your email <a href="http://slack.vectoross.io/">here</a> and we will send you one!</p>
+        <p>Vector has a team on <a href="https://vectoross.slack.com/" target="_blank">Slack</a>, where most of the development and usage discussions happen.</p>
+        <p>If you have a question or would like to discuss anything releated to Vector, join the team! If you don't have an invite yet, enter your email <a href="http://slack.vectoross.io/" target="_blank">here</a> and we will send you one!</p>
         <p>Join Vector on Slack for support and discussion. </p>
-        <p>You can also post questions to to either <a href="https://groups.google.com/forum/#!forum/vector-users">Google Groups</a> or <a href="http://stackoverflow.com/questions/tagged/vectoross">Stack Overflow</a>.</p>
+        <p>You can also post questions to to either <a href="https://groups.google.com/forum/#!forum/vector-users" target="_blank">Google Groups</a> or <a href="http://stackoverflow.com/questions/tagged/vectoross" target="_blank">Stack Overflow</a>.</p>
         <h3 class="sub-title text-center">Issues</h3>
-        <p>Vector tracks bugs and future development on <a href="https://github.com/Netflix/vector/issues">GitHub</a>.</p>
-        <p>If you have a bug or issue to report, <a href="https://github.com/Netflix/vector/issues">GitHub issues</a> is the place to go.</p>
+        <p>Vector tracks bugs and future development on <a href="https://github.com/Netflix/vector" target="_blank">GitHub</a>.</p>
+        <p>If you have a bug or issue to report, <a href="https://github.com/Netflix/vector/issues" target="_blank">GitHub issues</a> is the place to go.</p>
         </div><!--//docs-inner-->
     </div><!--//container-->
 </section><!--//docs-->
@@ -130,7 +136,7 @@ $ sudo tar xvzf vector.tar.gz
           <div class="info">
             <p>Copyright 2016 Netflix, Inc.</p>
             <p>Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
-            <p><a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+            <p><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a></p>
             <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
           </div><!--//info-->
       </div><!--//license-inner-->
