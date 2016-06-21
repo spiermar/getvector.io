@@ -5,7 +5,7 @@ date:   2016-06-01 08:00:00 -0700
 categories: blog release
 ---
 
-Today, we’re excited to introduce a new release of Vector. This one is a little bigger than our usual releases, and includes a few new features. That's why we're bumping the minor version number from 1.0.x to 1.1.x. It also took a bit longer and included more changes, and that was mainly because some of the new features required multiple new components working together to be truly useful for users.
+Today, we're excited to introduce a new release of Vector, our instance performance analysis tool. This one is a little bigger than our usual releases, and includes a few new features. That's why we're bumping the minor version number from 1.0.x to 1.1.x. It also took a bit longer and included more changes, and that was mainly because some of the new features required multiple new components working together to be truly useful for users.
 
 Here's a quick summary of what's new and improved.
 
@@ -58,7 +58,7 @@ On top of all these new features, we also created a predefined "container" dashb
 
 ### Docker Image
 
-For many, deploying a Docker image is much easier than building Vector from source, or downloading a build, and deploying to a web server. That's why we now have an [official](https://hub.docker.com/r/netflixoss/vector/) Docker image!
+There are two components to Vector: the agent software that runs on every host, and a single web server that loads the Vector dashboard software in your browser. The web server software can now be deployed as a Docker image, which some may find easier than building Vector from source, or downloading a build and deploying a web server. So now we have an [official](https://hub.docker.com/r/netflixoss/vector/) Docker image!
 
 Just pull 'netflixoss/vector' to get up and running!
 
@@ -69,6 +69,10 @@ docker run \
   -p 80:80 \
   netflixoss/vector:latest
 ```
+
+*You still need to load the agent software on each monitored host for the Vector dashboard to connect to.*
+
+And what could be easier than loading a Docker image? How about not having to do anything! Another option is to just load Vector from our public web server. More about that in the next section!
 
 ### New Site
 
@@ -83,7 +87,7 @@ Since Vector is a static, client-side application, that runs completely in the u
 * Upgraded all Gulp plugins and tasks, following the latest [gulp-angular](https://github.com/Swiip/generator-gulp-angular) generator.
 * Refactored the project structure to make it more maintainable. Components are now the primary building blocks.
 * Retry fetching context before giving up when HTTP 400 is returned by PCP.
-* Removed disk latency heatmap widget. It was not being used and required a PMDA that was never made public.
+* Temporarily removed disk latency heatmap widget. It was not being used and required a PMDA that was never made public.
 * If metric pulling is stopped for any reason, and the browser tab goes out of focus, then back in focus, don't try to start pulling metrics before context is updated.
 * General code cleanup. Removed dead code. Moved configuration flags from controllers to the appropriate services.
 
