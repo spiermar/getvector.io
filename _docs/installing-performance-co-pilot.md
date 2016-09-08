@@ -26,7 +26,7 @@ $ echo "deb https://dl.bintray.com/pcp/trusty trusty main" | sudo tee -a /etc/ap
 **Debian (Jessie):**
 
 ```
-$ echo "deb https://dl.bintray.com/netflixoss/jessie jessie main" | sudo tee -a /etc/apt/sources.list
+$ echo "deb https://dl.bintray.com/pcp/jessie jessie main" | sudo tee -a /etc/apt/sources.list
 ```
 
 Once that is done, you should be able to update your package list:
