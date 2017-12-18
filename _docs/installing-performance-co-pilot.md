@@ -43,12 +43,20 @@ $ sudo apt-get install pcp pcp-webapi
 
 That's it! Now PCP should be installed and running on your system!
 
+#### RPM-based Systems (RHEL, CentOS, Fedora)
+
+PCP should already be available in their repositories.
+
+```
+$ yum install pcp
+```
+
 ### Building from Source
 
 To build PCP from source, get the current version of the source code:
 
 ```
-$ git clone git://git.pcp.io/pcp
+$ git clone https://github.com/performancecopilot/pcp
 ```
 
 Check that pre-requisites such as libmicrohttpd headers/libraries and
