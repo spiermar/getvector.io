@@ -3,7 +3,7 @@ title: Vector
 email: vector-users@googlegroups.com
 description: An on-host performance monitoring framework which exposes hand picked high resolution metrics to every engineer’s browser
 baseurl: ""
-url: "http://vectoross.io"
+url: "http://getvector.io"
 twitter_username: vectoross
 github_username:  Neflix
 bintray_binary: https://dl.bintray.com/netflixoss/downloads/1.1.0/vector.tar.gz

@@ -78,7 +78,7 @@ And what could be easier than loading a Docker image? How about not having to do
 
 Although not directly related to the release, we also launched a new website for Vector. Previously, most of the documentation around Vector was kept under the repository wiki on GitHub. This worked great so far, but the new website gives us more flexibility around how things are presented and organized.
 The new website also allows us to publish and have a central source for news and blog posts related to Vector. Subscribe to the RSS feed to keep updated!
-Since Vector is a static, client-side application, that runs completely in the user's browser, there's no reason why we couldn't host it ourselves, so users could try it out before deploying it themselves. Check [vectoross.io/demo](http://vectoross.io/demo) to try the latest version!
+Since Vector is a static, client-side application, that runs completely in the user's browser, there's no reason why we couldn't host it ourselves, so users could try it out before deploying it themselves. Check [getvector.io/demo](http://getvector.io/demo) to try the latest version!
 
 ### Other Improvements and Bug Fixes
 
