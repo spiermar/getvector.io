@@ -12,5 +12,5 @@ At this point, support for [CPU Flame Graphs](http://www.brendangregg.com/FlameG
 
 ## Installation
 
-* Install the `Generic PMDA` according to instructions available at [https://github.com/spiermar/generic-pmda](https://github.com/spiermar/generic-pmda).
+* Install the `Vector PMDA` according to instructions available at [https://github.com/spiermar/vector-pmda](https://github.com/spiermar/vector-pmda).
 * Once the PMDA is working, just set the `enableCpuFlameGraph` option to `true` in the `app/index.config.js` file.
