@@ -34,11 +34,11 @@ Data models are, in a nutshell, objects that control the metrics required for ea
 
 More details about the Data Model implementation can be found in the _angular-dashboard_ documentation:
 
-[github.com/DataTorrent/malhar-angular-dashboard](https://github.com/DataTorrent/malhar-angular-dashboard#datamodeltype)
+* [github.com/DataTorrent/malhar-angular-dashboard](https://github.com/DataTorrent/malhar-angular-dashboard#datamodeltype)
 
 Examples can be found in the _datamodel_ component:
 
-[src/app/components/datamodel](https://github.com/Netflix/vector/tree/master/src/app/components/datamodel)
+* [src/app/components/datamodel](https://github.com/Netflix/vector/tree/master/src/app/components/datamodel)
 
 #### Generic Data Models
 
@@ -53,7 +53,7 @@ In order to simplify the process of creating new widgets, a set of generic data 
 
 The source code can be found at:
 
-[src/app/components/datamodel](https://github.com/Netflix/vector/tree/master/src/app/components/datamodel)
+* [src/app/components/datamodel](https://github.com/Netflix/vector/tree/master/src/app/components/datamodel)
 
 ### Directives/Templates
 
@@ -61,4 +61,4 @@ With the exception of the flame graph widgets, all Vector widgets use one of two
 
 The source code for the directives and templates can be found at:
 
-[src/app/components/chart](https://github.com/Netflix/vector/tree/master/src/app/components/chart)
+* [src/app/components/chart](https://github.com/Netflix/vector/tree/master/src/app/components/chart)
