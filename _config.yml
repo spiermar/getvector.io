@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://getvector.io"
 twitter_username: vectoross
 github_username:  Neflix
-bintray_binary: https://dl.bintray.com/netflixoss/downloads/1.2.1/vector.tar.gz
+bintray_binary: https://dl.bintray.com/netflixoss/downloads/1.3.0/vector.tar.gz
 
 collections:
   docs:
