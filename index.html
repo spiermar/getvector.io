@@ -95,6 +95,7 @@ netflixoss/vector:latest
               </code></pre>
             </div><!--//code-block-->
           </div><!--//block-->
+
           <div class="block">
             <h3 class="sub-title text-center">With a Web Server</h3>
             <p>Since Vector is just a static application, you should be able to easily deploy it to any web server. For example, using Ubuntu with Apache 2.</p>
@@ -106,9 +107,17 @@ $ sudo tar xvzf vector.tar.gz
               </code></pre>
             </div><!--//code-block-->
           </div><!--//block-->
+
+          <div class="block">
+            <h3 class="sub-title text-center">Building from source</h3>
+            <p>Vector is a NodeJS application, and can be built from source if you want to customise it.</p>
+            <p>See the <a href="{{ '/docs/building-vector-source.html' | prepend: site.baseurl }}">compilation instructions</a>.</p>
+          </div><!--//block-->
+
           <p>That's it! Just open your browser and point to your Docker container on port 80 or the web server. Apache also runs by default on port 80.</p>
           <p>Once the Vector UI is loaded, just enter the hostname or IP from the host you installed PCP on, and start collecting metrics!</p>
           <p>Happy Monitoring! <i class="fa fa-heart"></i></p>
+
         </div><!--//docs-inner-->
     </div><!--//container-->
 </section><!--//docs-->

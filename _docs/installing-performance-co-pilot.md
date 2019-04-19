@@ -7,6 +7,15 @@ Since Vector depends on version 3.10 or higher, the packages currently available
 
 ### Binary Packages
 
+#### Debian-based Systems (Bionic)
+
+To install PCP on newer platforms, you can use the provided package repositories:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install -y pcp pcp-webapi libpcp-pmda3-dev libpcp3-dev
+```
+
 #### Debian-based Systems (Debian, Ubuntu)
 
 To install using the official PCP binaries, first you need to import the repo key:

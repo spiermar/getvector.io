@@ -8,15 +8,18 @@ Since Vector is just a static application, you should be able to easily deploy i
 The Vector distribution tarball, containing all its dependencies, can be found on Bintray:
 
 [{{ site.bintray_binary }}]({{ site.bintray_binary }})
+** Note:
+This bintray is out of date, you should create your own from source.
 
 The only thing you need to do is download and uncompress the gzip tarball into your web server directory.
 
 For example, using Ubuntu with Apache 2:
 
 ```
+$ cd /tmp
+$ wget {{ site.bintray_binary }}
 $ cd /var/www/html
-$ sudo wget {{ site.bintray_binary }}
-$ sudo tar xvzf vector.tar.gz
+$ sudo tar xvzf /tmp/vector.tar.gz
 ```
 
 That's it! Just open your browser and point to the web server. Apache should run by default on port 80!
